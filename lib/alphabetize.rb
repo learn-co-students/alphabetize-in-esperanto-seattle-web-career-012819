@@ -1,6 +1,6 @@
 def alphabetize(arr)
   arr.sort_by do |x|
-    x.split("").collect do |char|
+    x.split("").map do |char|
       ESPERANTO_ALPHABET.index(char)
     end
   end
